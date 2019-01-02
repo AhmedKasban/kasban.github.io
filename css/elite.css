@@ -108,7 +108,7 @@ nav {
 
 
 
-/*banner*/
+/*carousel*/
 .carousel{
     overflow: hidden;
 }
@@ -254,7 +254,7 @@ nav {
 
 
 
-/*atest Post*/
+/*latest Post*/
 .LatestPost{
    padding: 40px 0;
 }
@@ -357,7 +357,11 @@ nav {
        margin: 25px 15%;
    }
 }
-
+@media (max-width:991px) {
+    .price {
+        padding-bottom: 40px
+    }
+ }
 
 
 
@@ -426,7 +430,7 @@ nav {
         display: none; ;
     }
     .choose .txt button {
-        margin: 25px 0 20px;
+        margin: 25px 0 25px;
     }
 }
 
