@@ -2,6 +2,17 @@ $ (function(){
     'use strict' ;
 
 
+    var x1 = $(window).height(),
+        y1 = $(window).width(),
+        x2 = $('.navbar').innerHeight(),
+        x3=x1-x2;
+    if (y1>=1200){
+        $('.carousel-inner img').height(x3);
+    }
+    
+
+
+
    
 
 

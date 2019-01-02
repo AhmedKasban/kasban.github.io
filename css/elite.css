@@ -109,41 +109,20 @@ nav {
 
 
 /*banner*/
-.banner {
-    background-image: url('http://d.up-00.com/2018/10/153889938610771.jpg');
-    background-size: 100% 100%;
+.carousel{
+    overflow: hidden;
 }
-
-.banner .carousel-inner h1 {
-    color: #08526D;
-    font-size: 5vw ; 
-} 
-.banner .carousel-inner h1 span{
-   color: #ec1c23;
-  
-} 
-.pos {
-    padding: 10% 15px;
-  
+.carousel-control-prev i , .carousel-control-next i {
+    background-color: white;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    color: rgb(69, 69, 151);
+    border: 1px solid rgb(69, 69, 151);
+    cursor: pointer;
 }
-.carousel-indicators  .active {
-    background-color: #08526d;
-    
-}
-
-@media (max-width: 991px) {
-    .pos {
-        padding: 10% 
-      
-    }
-    .navbar-collapse{
-        text-transform: capitalize
-    }
-    .carousel-indicators li {
-       width: 15px
-        
-    }
-   
+.carousel-control-prev:hover , .carousel-control-next:hover {
+  cursor: auto;
 }
 
 
@@ -255,6 +234,9 @@ nav {
     .feature ul li{
         margin-left: 0;
         margin-top: 20px 
+    }
+    .feature ul{
+        padding: 15px;
     }
     .featuregrid img{
         height: 200px;
@@ -419,11 +401,34 @@ nav {
     border: 1px solid #fcfcfc;
 }
 @media (max-width:991px) {
-     .choose .txt{
+    .choose .txt{
       padding-left: 50px;
       padding-bottom: 50px
-      }
+    }
  }
+
+ @media (max-width:700px) {
+    .choose .txt{
+        height: 300px;
+        padding-left: 50px;
+        padding-bottom: 10px;
+        padding-top: 10px
+
+    }
+    .choose .txt h1{
+        margin: 20px 0 ;
+        font-size: 20px;
+    }
+    .choose .txt p:first-of-type{
+        margin-top: 15px ;
+    }
+    .choose .txt p:nth-of-type(2){
+        display: none; ;
+    }
+    .choose .txt button {
+        margin: 25px 0 20px;
+    }
+}
 
 
 
@@ -437,15 +442,40 @@ nav {
  /*client*/
  .client {
      background-color: #fcfcfc;
-     padding: 100px 0;
+     padding: 80px 0;
  }
+ .client i {
+    font-size: 50px
+}
+
+.client p:first-of-type {
+    font-size: 30px
+}
  .client p {
      line-height: 45px;
      margin-bottom: 0
  }
+ 
+
  @media (max-width:991px) {
     .client .textcenter {
         margin-top: 30px
+    }
+    .client  {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+@media (max-width:700px) {
+    .client  {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .client i {
+        font-size: 30px
+    }
+    .client p:first-of-type {
+        font-size: 20px
     }
 }
 
@@ -553,6 +583,12 @@ nav {
 @media (max-width:991px) {
     .footer h5 {
         margin-top: 35px
+    }
+    .footer{
+        padding-left: 0
+    }
+    .footer div{
+        padding-left: 15px
     }
 }
 
